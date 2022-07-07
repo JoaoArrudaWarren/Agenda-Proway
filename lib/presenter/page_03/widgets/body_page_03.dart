@@ -90,10 +90,15 @@ class BodyPage03 extends StatelessWidget {
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Color.fromARGB(255, 95, 117, 177)),
-                )
+                ),
               ],
             ),
-          )
+          ),
+          Container(
+            width: double.infinity,
+            height: 1,
+            color: Colors.grey.shade300,
+          ),
         ],
       ),
     );
