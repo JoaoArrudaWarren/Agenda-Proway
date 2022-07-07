@@ -99,6 +99,13 @@ class BodyPage03 extends StatelessWidget {
             height: 1,
             color: Colors.grey.shade300,
           ),
+          Row(
+            children: [
+              Column(
+                children: [Row(), Row()],
+              ),
+            ],
+          )
         ],
       ),
     );
