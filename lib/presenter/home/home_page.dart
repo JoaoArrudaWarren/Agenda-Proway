@@ -13,7 +13,10 @@ class HomePage extends StatelessWidget {
               Icons.book,
               size: 50,
             ),
-            Text("agenda"),
+            Text(
+              "agenda",
+              style: TextStyle(color: Color.fromARGB(255, 95, 117, 177)), //
+            ),
           ],
         )
       ],
