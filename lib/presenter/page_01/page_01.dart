@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import '../home/home_page.dart';
-import '../page_03/page_03.dart';
 import '../home/bottom_navigation_page.dart';
-import '../page_04/page_04.dart';
-import '../page_05/page_05.dart';
+import '../home/home_page.dart';
 
 class Page01 extends StatefulWidget {
   const Page01({Key? key}) : super(key: key);
@@ -19,12 +16,13 @@ class _Page01State extends State<Page01> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottonNavigationPage(),
+      bottomNavigationBar: const BottonNavigationPage(),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            PaddingBarHome(),
-            LineBlackInfiniteHome(),
+            const PaddingBarHome(),
+            const LineBlackInfiniteHome(),
+            // ignore: sized_box_for_whitespace
             Container(
               height: 230,
               child: Column(
@@ -37,7 +35,7 @@ class _Page01State extends State<Page01> {
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
+                            children: const [
                               Text(
                                 "Agende seus serviços",
                                 style: TextStyle(
@@ -46,7 +44,7 @@ class _Page01State extends State<Page01> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Container(

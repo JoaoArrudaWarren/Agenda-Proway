@@ -21,49 +21,56 @@ class BodyHomePage extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          PaddingBarHome(),
+          const PaddingBarHome(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                height: 830,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 550,
-                          height: 75,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 219, 219, 219),
-                              borderRadius: BorderRadius.circular(20)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: const [
-                                Text(
-                                  "E-mail",
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 124, 124, 124),
-                                    fontSize: 30,
-                                    fontFamily: "Sarala",
+              Padding(
+                padding: const EdgeInsets.only(left: 5.0, right: 2),
+                child: Container(
+                  height: 830,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Wrap(
+                            children: [
+                              Container(
+                                width: 350,
+                                height: 75,
+                                decoration: BoxDecoration(
+                                    color: const Color.fromARGB(
+                                        255, 219, 219, 219),
+                                    borderRadius: BorderRadius.circular(20)),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(15.0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: const [
+                                      Text(
+                                        "E-mail",
+                                        style: TextStyle(
+                                          color: Color.fromARGB(
+                                              255, 124, 124, 124),
+                                          fontSize: 30,
+                                          fontFamily: "Sarala",
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(30.0),
-                      child: Container(
-                        width: 550,
+                        ],
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width,
                         height: 75,
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 219, 219, 219),
@@ -86,47 +93,47 @@ class BodyHomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(30.0),
-                      child: Container(
-                        width: 550,
-                        height: 75,
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 95, 117, 177),
-                            borderRadius: BorderRadius.circular(20)),
-                        child: Padding(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              IconButton(
-                                iconSize: 150,
-                                icon: const Text(
-                                  "Acessar",
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 255, 255, 255),
-                                    fontSize: 22,
-                                    fontFamily: "Sarala",
-                                  ),
-                                ),
-                                onPressed: () {
-                                  Navigator.of(context).push(
-                                    MaterialPageRoute(
-                                      builder: ((context) {
-                                        return const Page01();
-                                      }),
+                      Padding(
+                        padding: const EdgeInsets.all(30.0),
+                        child: Container(
+                          width: 350,
+                          height: 75,
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 95, 117, 177),
+                              borderRadius: BorderRadius.circular(20)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(15.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                IconButton(
+                                  iconSize: 150,
+                                  icon: const Text(
+                                    "Acessar",
+                                    style: TextStyle(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 22,
+                                      fontFamily: "Sarala",
                                     ),
-                                  );
-                                },
-                              ),
-                            ],
+                                  ),
+                                  onPressed: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: ((context) {
+                                          return const Page01();
+                                        }),
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               )
             ],
