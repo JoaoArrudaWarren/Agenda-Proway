@@ -6,8 +6,8 @@ import 'widgets/available_times.dart';
 import 'widgets/confirm _reservation_btn.dart';
 import 'widgets/doctor_row_reservation.dart';
 
-class Page04 extends StatelessWidget {
-  const Page04({Key? key}) : super(key: key);
+class Schedule extends StatelessWidget {
+  const Schedule({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

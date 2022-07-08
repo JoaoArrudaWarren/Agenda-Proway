@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../page_04/page_04.dart';
+import '../../schedule/schedule.dart';
 import 'doctor_list.dart';
 import 'grey_line.dart';
 
