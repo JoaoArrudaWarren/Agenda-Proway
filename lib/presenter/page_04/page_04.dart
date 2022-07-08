@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:table_calendar/table_calendar.dart';
+// import 'package:table_calendar/table_calendar.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
@@ -43,16 +43,16 @@ class Page2 extends StatelessWidget {
                 color: Colors.black,
                 height: 1,
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TableCalendar(
-                  firstDay: DateTime.utc(2010, 10, 16),
-                  lastDay: DateTime.utc(2030, 3, 14),
-                  focusedDay: DateTime.now(),
-                ),
-              ),
+              // Padding(
+              //   padding: const EdgeInsets.all(8.0),
+              //   child: TableCalendar(
+              //     firstDay: DateTime.utc(2010, 10, 16),
+              //     lastDay: DateTime.utc(2030, 3, 14),
+              //     focusedDay: DateTime.now(),
+              //   ),
+              // ),
               Container(
-                color: Color.fromARGB(255, 112, 107, 107),
+                color: const Color.fromARGB(255, 112, 107, 107),
                 height: 1,
               ),
               Row(
