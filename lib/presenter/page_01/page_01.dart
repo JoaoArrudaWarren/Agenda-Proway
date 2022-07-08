@@ -34,7 +34,7 @@ class _Page01State extends State<Page01> {
                       child: Column(
                         children: [
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: const [
                               Text(
                                 "Agende seus serviços",
