@@ -5,7 +5,7 @@ import 'home/home_page.dart';
 void main() {
   runApp(
     const MaterialApp(
-      title: 'AgendaWarren',
+      title: 'Agenda Warren',
       home: HomePage(),
       debugShowCheckedModeBanner: false,
     ),
