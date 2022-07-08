@@ -47,14 +47,20 @@ class _FindServiceState extends State<FindService> {
                           const SizedBox(
                             height: 20,
                           ),
-                          TextField(
+                          const TextField(
                             style: TextStyle(
                               color: Color.fromARGB(255, 95, 117, 177),
                               fontSize: 20,
                             ),
                             expands: false,
                             decoration: InputDecoration(
-                                label: Text("Qual cidade você está?")),
+                              label: Text(
+                                "Qual cidade você está?",
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 95, 117, 177),
+                                ),
+                              ),
+                            ),
                           ),
                         ],
                       ),

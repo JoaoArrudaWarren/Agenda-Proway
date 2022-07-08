@@ -2,10 +2,18 @@ import 'package:flutter/material.dart';
 
 import '../../find_service/find_service.dart';
 
-class RowAcessHome extends StatelessWidget {
+class RowAcessHome extends StatefulWidget {
   const RowAcessHome({
     Key? key,
   }) : super(key: key);
+
+  @override
+  State<RowAcessHome> createState() => _RowAcessHomeState();
+}
+
+class _RowAcessHomeState extends State<RowAcessHome> {
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -23,32 +31,57 @@ class RowAcessHome extends StatelessWidget {
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width - 100,
-                    height: 75,
-                    child: const TextField(
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 95, 117, 177),
-                        fontSize: 20,
+                    height: 95,
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: TextField(
+                        controller: emailController,
+                        keyboardType: TextInputType.emailAddress,
+                        style: const TextStyle(
+                          color: Color.fromARGB(255, 95, 117, 177),
+                          fontSize: 20,
+                        ),
+                        expands: false,
+                        decoration: const InputDecoration(
+                          label: Text(
+                            "Digite seu E-mail\n",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 95, 117, 177),
+                            ),
+                          ),
+                        ),
                       ),
-                      expands: false,
-                      decoration:
-                          InputDecoration(label: Text("Digite seu Login")),
                     ),
                   ),
                 ],
+              ),
+              const SizedBox(
+                height: 10,
               ),
               Row(
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width - 100,
-                    height: 75,
-                    child: const TextField(
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 95, 117, 177),
-                        fontSize: 20,
+                    height: 95,
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: TextField(
+                        controller: passwordController,
+                        keyboardType: TextInputType.visiblePassword,
+                        style: const TextStyle(
+                          color: Color.fromARGB(255, 95, 117, 177),
+                          fontSize: 20,
+                        ),
+                        expands: false,
+                        decoration: const InputDecoration(
+                          label: Text(
+                            "Digite sua Senha\n",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 95, 117, 177),
+                            ),
+                          ),
+                        ),
                       ),
-                      expands: false,
-                      decoration:
-                          InputDecoration(label: Text("Digite sua Senha")),
                     ),
                   ),
                 ],
@@ -78,13 +111,36 @@ class RowAcessHome extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: ((context) {
-                                  return const FindService();
-                                }),
-                              ),
-                            );
+                            if (emailController.text == "agenda" &&
+                                passwordController.text == "proway") {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) {
+                                    return const FindService();
+                                  }),
+                                ),
+                              );
+                            } else {
+                              showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text("Erro"),
+                                      content: const Text(
+                                          "Login e/ou senha incorretos."),
+                                      actions: [
+                                        MaterialButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text("Fechar"),
+                                        )
+                                      ],
+                                    );
+                                  });
+                              emailController.clear();
+                              passwordController.clear();
+                            }
                           },
                         ),
                       ],
