@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Agenda-Proway",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Agenda-Proway (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Agenda-Proway (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Page_05 Debug",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/presenter/page_05/page_05.dart"
+        }
+    ]
+}

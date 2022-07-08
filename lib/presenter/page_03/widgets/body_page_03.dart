@@ -1,8 +1,35 @@
 import 'package:flutter/material.dart';
 
+import 'doctor_list.dart';
+import 'grey_line.dart';
+
+List<String> list2 = [
+  'Consulta Dr. Diógenesis',
+  'Consulta Dra. Leticia',
+  'Consulta Dr. Mauricio',
+  'Consulta Dra. Mayra',
+  'Consulta Dr. Jean',
+  'Consulta Dr. Donald',
+  'Consulta Dr. Peter',
+  'Consulta Dra. Fernanda',
+  'Consulta Dr. Romario',
+  'Consulta Dr. Greice'
+];
+List<String> price = [
+  'S/.100,00',
+  'S/.200,00',
+  'S/.180,00',
+  'S/.120,00',
+  'S/.100,00',
+  'S/.90,00',
+  'S/.130,00',
+  'S/.220,00',
+  'S/.240,00',
+  'S/.110,00'
+];
+
 class BodyPage03 extends StatelessWidget {
   const BodyPage03({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -22,7 +49,7 @@ class BodyPage03 extends StatelessWidget {
                   color: Colors.grey.shade300,
                   spreadRadius: 5,
                   blurRadius: 7,
-                  offset: const Offset(3, 5), // changes position of shadow
+                  offset: const Offset(3, 5),
                 ),
               ],
             ),
@@ -75,11 +102,7 @@ class BodyPage03 extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            width: double.infinity,
-            height: 1,
-            color: Colors.grey.shade300,
-          ),
+          const GreyLine(),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Row(
@@ -93,7 +116,10 @@ class BodyPage03 extends StatelessWidget {
                 )
               ],
             ),
-          )
+          ),
+          const GreyLine(),
+          for (var i = 0; i < list2.length; i++)
+            DoctorList(title: list2[i], price: price[i]),
         ],
       ),
     );
