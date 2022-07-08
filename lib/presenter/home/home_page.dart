@@ -26,7 +26,7 @@ class BodyHomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
+              SizedBox(
                 height: 830,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

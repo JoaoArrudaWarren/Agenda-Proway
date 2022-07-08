@@ -26,7 +26,7 @@ class BottonNavigationPage extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.home,
               size: 50,
             ),
@@ -50,7 +50,7 @@ class BottonNavigationPage extends StatelessWidget {
               Icons.calendar_today,
               size: 40,
             ),
-            color: Colors.grey,
+            color: Colors.black,
           ),
           label: 'Reservas',
           backgroundColor: Colors.white,
@@ -115,7 +115,7 @@ class BottonNavigationPage extends StatelessWidget {
                   ),
                 );
               },
-              icon: const Icon(
+              icon: Icon(
                 Icons.person,
                 size: 40,
                 color: Colors.grey,
