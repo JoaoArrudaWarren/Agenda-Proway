@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/framework.dart';
 
 import '../home/bottom_navigation_page.dart';
 import '../home/home_page.dart';
@@ -29,7 +31,7 @@ class _Page01State extends State<Page01> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(50.0),
-                    child: SizedBox(
+                    child: Container(
                       height: 130,
                       child: Column(
                         children: [
