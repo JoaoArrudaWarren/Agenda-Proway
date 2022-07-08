@@ -1,7 +1,5 @@
-import 'package:agenda_warren/presenter/page_03/widgets/grey_line.dart';
-import 'package:agenda_warren/presenter/page_04/page_04.dart';
 import 'package:flutter/material.dart';
-import 'grey_line.dart';
+import '../../page_04/page_04.dart';
 
 class DoctorList extends StatelessWidget {
   final String title;

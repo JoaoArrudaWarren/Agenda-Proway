@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../page_04/page_04.dart';
 import 'widgets/body_page_03.dart';
 
 void main() {
@@ -15,22 +13,6 @@ class Page03 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-        // appBar: AppBar(
-        //   title: const Text('Agende seu horario'),
-        //   backgroundColor: Colors.black,
-        //   actions: [
-        //     IconButton(
-        //         onPressed: () => {
-        //               Navigator.of(context).push(MaterialPageRoute(
-        //                   builder: (context) => const Page04()))
-        //             },
-        //         icon: const Icon(
-        //           Icons.keyboard_arrow_right,
-        //           size: 40,
-        //         ))
-        //   ],
-        // ),
-        body: BodyPage03());
+    return const Scaffold(body: BodyPage03());
   }
 }

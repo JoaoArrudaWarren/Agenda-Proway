@@ -1,9 +1,9 @@
-import 'package:agenda_warren/presenter/home/home_page.dart';
-import 'package:agenda_warren/presenter/page_03/page_03.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import '../home/home_page.dart';
+import '../page_03/page_03.dart';
 import '../page_04/page_04.dart';
 import '../page_05/page_05.dart';
 
