@@ -2,12 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-<<<<<<< HEAD
 import '../home/home_page.dart';
 import '../page_03/page_03.dart';
-=======
 import '../home/bottom_navigation_page.dart';
->>>>>>> 64fa66642f71a09dc671302439bb4dd0a852ee07
 import '../page_04/page_04.dart';
 import '../page_05/page_05.dart';
 
