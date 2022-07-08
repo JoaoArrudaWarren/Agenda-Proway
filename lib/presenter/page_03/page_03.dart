@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'widgets/body_page_03.dart';
 
 void main() {
-  runApp(const MaterialApp(title: 'Agenda Warren', home: Page03()));
+  runApp(const MaterialApp(
+      title: 'Agenda Warren',
+      debugShowCheckedModeBanner: false,
+      home: Page03()));
 }
 
 class Page03 extends StatelessWidget {
