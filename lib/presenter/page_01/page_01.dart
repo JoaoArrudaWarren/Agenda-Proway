@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import '../home/bottom_navigation_page.dart';
 import '../page_04/page_04.dart';
 import '../page_05/page_05.dart';
 
@@ -18,121 +19,7 @@ class _Page01State extends State<Page01> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
-        items: [
-          BottomNavigationBarItem(
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page01();
-                    }),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.home,
-                size: 60,
-              ),
-              color: Colors.black,
-            ),
-            label: 'Home',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return PageFive();
-                    }),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.calendar_today,
-                size: 60,
-              ),
-              color: Colors.black,
-            ),
-            label: 'Reservas',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: IconButton(
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: ((context) {
-                        return const Page01();
-                      }),
-                    ),
-                  );
-                },
-                icon: Icon(
-                  Icons.search,
-                  size: 60,
-                  color: Colors.grey,
-                )),
-            label: 'Search',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page2();
-                    }),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.calendar_month,
-                size: 60,
-                color: Colors.grey,
-              ),
-            ),
-            label: 'Calendar',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page2();
-                    }),
-                  ),
-                );
-              },
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: ((context) {
-                        return const Page01();
-                      }),
-                    ),
-                  );
-                },
-                icon: Icon(
-                  Icons.person,
-                  size: 60,
-                  color: Colors.grey,
-                ),
-              ),
-            ),
-            label: 'Home',
-            backgroundColor: Colors.white,
-          ),
-        ],
-      ),
+      bottomNavigationBar: BottonNavigationPage(),
       body: SingleChildScrollView(
         child: Column(
           children: [
