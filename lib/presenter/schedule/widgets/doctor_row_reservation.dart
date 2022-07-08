@@ -8,10 +8,7 @@ class DoctorRowReservation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(
-        top: 10,
-        bottom: 10,
-      ),
+      padding: const EdgeInsets.all(10),
       decoration: const BoxDecoration(
         border: Border(
           bottom: BorderSide(color: Color.fromARGB(255, 82, 80, 80), width: 1),
@@ -31,7 +28,7 @@ class DoctorRowReservation extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Row(
@@ -45,7 +42,7 @@ class DoctorRowReservation extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Row(
@@ -61,7 +58,7 @@ class DoctorRowReservation extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
         ],

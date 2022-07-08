@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../page_01/page_01.dart';
 import '../page_03/page_03.dart';
-import '../page_04/page_04.dart';
+import '../schedule/schedule.dart';
 import '../page_05/page_05.dart';
 
 class BottonNavigationPage extends StatelessWidget {
@@ -35,7 +35,6 @@ class BottonNavigationPage extends StatelessWidget {
             ),
             color: paginaAtual == "Page01()" ? Colors.black : Colors.grey,
             hoverColor: Colors.grey.shade300,
-            disabledColor: Colors.red,
           ),
           label: 'Home',
           backgroundColor: Colors.grey.shade100,
@@ -88,7 +87,7 @@ class BottonNavigationPage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: ((context) {
-                    return const Page04();
+                    return const Schedule();
                   }),
                 ),
               );
@@ -96,7 +95,7 @@ class BottonNavigationPage extends StatelessWidget {
             icon: Icon(
               Icons.calendar_month,
               size: 45,
-              color: paginaAtual == "Page04()" ? Colors.black : Colors.grey,
+              color: paginaAtual == "Schedule()" ? Colors.black : Colors.grey,
             ),
             hoverColor: Colors.grey.shade300,
           ),

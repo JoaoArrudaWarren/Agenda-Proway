@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../page_04/page_04.dart';
+import '../../schedule/schedule.dart';
 
 class DoctorList extends StatelessWidget {
   final String title;
@@ -45,7 +45,7 @@ class DoctorList extends StatelessWidget {
           GestureDetector(
             onTap: () => {
               Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => const Page04()))
+                  .push(MaterialPageRoute(builder: (context) => const Schedule()))
             },
             child: Container(
               alignment: Alignment.center,
