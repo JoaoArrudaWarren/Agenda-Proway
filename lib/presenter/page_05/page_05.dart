@@ -32,7 +32,7 @@ class PageFive extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
@@ -197,7 +197,7 @@ class PageFive extends StatelessWidget {
                     width: 150,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 95, 117, 177),
+                      color: const Color.fromARGB(255, 95, 117, 177),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Column(
@@ -215,7 +215,7 @@ class PageFive extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 70,
                   ),
                   Container(
@@ -247,7 +247,7 @@ class PageFive extends StatelessWidget {
               children: [
                 Container(
                   height: 2,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color.fromARGB(103, 0, 0, 0),
                   ),
                 ),
@@ -375,7 +375,7 @@ class PageFive extends StatelessWidget {
                     width: 150,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 95, 117, 177),
+                      color: const Color.fromARGB(255, 95, 117, 177),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Column(
@@ -393,7 +393,7 @@ class PageFive extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 70,
                   ),
                   Container(
