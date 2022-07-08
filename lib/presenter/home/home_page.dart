@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: BodyHomePage());
+    return const Scaffold(body: BodyHomePage());
   }
 }
 
@@ -26,9 +26,7 @@ class BodyHomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 5.0, right: 2),
-                child: Container(
+              Container(
                   height: 830,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -36,109 +34,102 @@ class BodyHomePage extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Wrap(
-                            children: [
-                              Container(
-                                width: 350,
-                                height: 75,
-                                decoration: BoxDecoration(
-                                    color: const Color.fromARGB(
-                                        255, 219, 219, 219),
-                                    borderRadius: BorderRadius.circular(20)),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(15.0),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: const [
-                                      Text(
-                                        "E-mail",
-                                        style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 124, 124, 124),
-                                          fontSize: 30,
-                                          fontFamily: "Sarala",
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 75,
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 219, 219, 219),
-                            borderRadius: BorderRadius.circular(20)),
-                        child: Padding(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: const [
-                              Text(
-                                "senha",
-                                style: TextStyle(
-                                  color: Color.fromARGB(255, 124, 124, 124),
-                                  fontSize: 30,
-                                  fontFamily: "Sarala",
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(30.0),
-                        child: Container(
-                          width: 350,
-                          height: 75,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 95, 117, 177),
-                              borderRadius: BorderRadius.circular(20)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                IconButton(
-                                  iconSize: 150,
-                                  icon: const Text(
-                                    "Acessar",
+                          Container(
+                            width: MediaQuery.of(context).size.width - 100,
+                            height: 75,
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 219, 219, 219),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(15.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: const [
+                                  Text(
+                                    "E-mail",
                                     style: TextStyle(
-                                      color: Color.fromARGB(255, 255, 255, 255),
-                                      fontSize: 22,
+                                      color: Color.fromARGB(255, 124, 124, 124),
+                                      fontSize: 30,
                                       fontFamily: "Sarala",
                                     ),
                                   ),
-                                  onPressed: () {
-                                    Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                        builder: ((context) {
-                                          return const Page01();
-                                        }),
-                                      ),
-                                    );
-                                  },
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
-                        ),
-                      ),
+                        ],
+                      )
                     ],
+                  )),
+              Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width - 100,
+                  height: 75,
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 219, 219, 219),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: const [
+                        Text(
+                          "senha",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 124, 124, 124),
+                            fontSize: 30,
+                            fontFamily: "Sarala",
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width - 100,
+                  height: 75,
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 95, 117, 177),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        IconButton(
+                            iconSize: 150,
+                            icon: const Text(
+                              "Acessar",
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                fontSize: 22,
+                                fontFamily: "Sarala",
+                              ),
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) {
+                                    return const Page01();
+                                  }),
+                                ),
+                              );
+                            }),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
-          LineBlackInfiniteHome(),
+          const LineBlackInfiniteHome(),
           const Padding(
             padding: EdgeInsets.all(15.0),
             child: Text(
