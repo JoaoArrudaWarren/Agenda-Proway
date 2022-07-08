@@ -13,6 +13,7 @@ class BottonNavigationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      selectedIconTheme: IconThemeData(color: Colors.amber),
       currentIndex: 0,
       items: [
         BottomNavigationBarItem(
@@ -32,7 +33,7 @@ class BottonNavigationPage extends StatelessWidget {
             ),
             color: Colors.black,
           ),
-          label: 'Home',
+          label: '',
           backgroundColor: Colors.white,
         ),
         BottomNavigationBarItem(
@@ -52,7 +53,7 @@ class BottonNavigationPage extends StatelessWidget {
             ),
             color: Colors.black,
           ),
-          label: 'Reservas',
+          label: '',
           backgroundColor: Colors.white,
         ),
         BottomNavigationBarItem(
@@ -85,7 +86,7 @@ class BottonNavigationPage extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.calendar_month,
               size: 45,
               color: Colors.grey,
