@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import '../home/bottom_navigation_page.dart';
+import 'widgets/confirm _reservation_btn.dart';
+import 'widgets/doctor_row_reservation.dart';
 
 class Page04 extends StatelessWidget {
   const Page04({Key? key}) : super(key: key);
@@ -245,38 +247,13 @@ class Page04 extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Row(
-                            children: const [
-                              Text(
-                                "R\$ 1.790,00",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  color: Color.fromARGB(255, 88, 171, 221),
-                                ),
-                              ),
-                            ],
-                          )
+                          DoctorRowReservation()
                         ],
                       ),
                     ],
                   ),
                 ),
-                Container(
-                  alignment: Alignment.center,
-                  width: 300,
-                  height: 50,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: const Color.fromARGB(255, 110, 132, 218),
-                  ),
-                  child: const Text(
-                    "Confirmar Reserva",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400),
-                  ),
-                ),
+                const ConfirmReservationBtn(),
               ],
             ),
           ],
@@ -285,3 +262,5 @@ class Page04 extends StatelessWidget {
     );
   }
 }
+
+
