@@ -100,26 +100,15 @@ class BottonNavigationPage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: ((context) {
-                    return const Page04();
+                    return const Page03();
                   }),
                 ),
               );
             },
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page03();
-                    }),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.person,
-                size: 40,
-                color: Colors.grey,
-              ),
+            icon: Icon(
+              Icons.person,
+              size: 40,
+              color: Colors.grey,
             ),
           ),
           label: 'Search Specify',
