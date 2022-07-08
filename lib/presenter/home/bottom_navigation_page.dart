@@ -24,7 +24,7 @@ class BottonNavigationPage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: ((context) {
-                    return const Page01();
+                    return const PageOne();
                   }),
                 ),
               );
@@ -67,7 +67,7 @@ class BottonNavigationPage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: ((context) {
-                    return const Page01();
+                    return const PageOne();
                   }),
                 ),
               );

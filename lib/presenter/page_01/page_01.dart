@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import '../home/bottom_navigation_page.dart';
-import '../home/home_page.dart';
+import '../home/widgets/line_black_infinity_home.dart';
+import '../home/widgets/padding_bar_home.dart';
 
-class Page01 extends StatefulWidget {
-  const Page01({Key? key}) : super(key: key);
+class PageOne extends StatefulWidget {
+  const PageOne({Key? key}) : super(key: key);
 
   @override
-  State<Page01> createState() => _Page01State();
+  State<PageOne> createState() => _PageOneState();
 }
 
-class _Page01State extends State<Page01> {
+class _PageOneState extends State<PageOne> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +30,7 @@ class _Page01State extends State<Page01> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(50.0),
-                    child: Container(
+                    child: SizedBox(
                       height: 130,
                       child: Column(
                         children: [
