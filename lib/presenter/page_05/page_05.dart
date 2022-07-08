@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../home/home_page.dart';
 
 import '../home/home_page.dart';
+import '../page_01/page_01.dart';
+import '../page_04/page_04.dart';
 
 void main() {
   runApp(
@@ -32,39 +34,114 @@ class PageFive extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-              size: 60,
-              color: Colors.grey,
-            ),
-            label: 'Home',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.search,
-              size: 60,
-              color: Colors.grey,
-            ),
-            label: 'Home',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.calendar_month,
-              size: 60,
+            icon: IconButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: ((context) {
+                      return const Page01();
+                    }),
+                  ),
+                );
+              },
+              icon: const Icon(
+                Icons.home,
+                size: 60,
+              ),
               color: Colors.black,
             ),
             label: 'Home',
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person,
-              size: 60,
-              color: Colors.grey,
+            icon: IconButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: ((context) {
+                      return PageFive();
+                    }),
+                  ),
+                );
+              },
+              icon: const Icon(
+                Icons.calendar_today,
+                size: 60,
+              ),
+              color: Colors.black,
+            ),
+            label: 'Reservas',
+            backgroundColor: Colors.white,
+          ),
+          BottomNavigationBarItem(
+            icon: IconButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: ((context) {
+                        return const Page01();
+                      }),
+                    ),
+                  );
+                },
+                icon: const Icon(
+                  Icons.search,
+                  size: 60,
+                  color: Colors.grey,
+                )),
+            label: 'Search',
+            backgroundColor: Colors.white,
+          ),
+          BottomNavigationBarItem(
+            icon: IconButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: ((context) {
+                      return const Page2();
+                    }),
+                  ),
+                );
+              },
+              icon: const Icon(
+                Icons.calendar_month,
+                size: 60,
+                color: Colors.grey,
+              ),
+            ),
+            label: 'Calendar',
+            backgroundColor: Colors.white,
+          ),
+          BottomNavigationBarItem(
+            icon: IconButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: ((context) {
+                      return const Page2();
+                    }),
+                  ),
+                );
+              },
+              icon: IconButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: ((context) {
+                        return const Page01();
+                      }),
+                    ),
+                  );
+                },
+                icon: const Icon(
+                  Icons.person,
+                  size: 60,
+                  color: Colors.grey,
+                ),
+              ),
             ),
             label: 'Home',
             backgroundColor: Colors.white,
@@ -197,7 +274,7 @@ class PageFive extends StatelessWidget {
                     width: 150,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 95, 117, 177),
+                      color: const Color.fromARGB(255, 95, 117, 177),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Column(
@@ -215,7 +292,7 @@ class PageFive extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 70,
                   ),
                   Container(
@@ -247,7 +324,7 @@ class PageFive extends StatelessWidget {
               children: [
                 Container(
                   height: 2,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color.fromARGB(103, 0, 0, 0),
                   ),
                 ),
@@ -375,7 +452,7 @@ class PageFive extends StatelessWidget {
                     width: 150,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 95, 117, 177),
+                      color: const Color.fromARGB(255, 95, 117, 177),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Column(
@@ -393,7 +470,7 @@ class PageFive extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 70,
                   ),
                   Container(
