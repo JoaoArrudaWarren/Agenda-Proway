@@ -1,4 +1,5 @@
 import 'package:agenda_warren/presenter/page_03/widgets/grey_line.dart';
+import 'package:agenda_warren/presenter/page_04/page_04.dart';
 import 'package:flutter/material.dart';
 import 'grey_line.dart';
 
@@ -43,17 +44,23 @@ class DoctorList extends StatelessWidget {
               )
             ],
           ),
-          Container(
-            alignment: Alignment.center,
-            width: 103,
-            height: 42,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              color: const Color.fromARGB(255, 110, 132, 218),
-            ),
-            child: const Text(
-              "Agendar",
-              style: TextStyle(color: Colors.white),
+          GestureDetector(
+            onTap: () => {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => const Page04()))
+            },
+            child: Container(
+              alignment: Alignment.center,
+              width: 103,
+              height: 42,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: const Color.fromARGB(255, 110, 132, 218),
+              ),
+              child: const Text(
+                "Agendar",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ),
         ],
