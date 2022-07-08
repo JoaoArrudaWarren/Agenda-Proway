@@ -35,7 +35,7 @@ class PageFive extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottonNavigationPage(
-        paginaAtual: PageFive(),
+        paginaAtual: "PageFive()",
       ),
       body: SingleChildScrollView(
         child: Column(
