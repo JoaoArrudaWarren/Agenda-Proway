@@ -6,8 +6,10 @@ import '../page_04/page_04.dart';
 import '../page_05/page_05.dart';
 
 class BottonNavigationPage extends StatelessWidget {
+  final String paginaAtual;
   const BottonNavigationPage({
     Key? key,
+    required this.paginaAtual,
   }) : super(key: key);
 
   @override
@@ -27,11 +29,11 @@ class BottonNavigationPage extends StatelessWidget {
                 ),
               );
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.home,
               size: 50,
             ),
-            color: Colors.black,
+            color: paginaAtual == "Page01()" ? Colors.black : Colors.grey,
           ),
           label: '',
           backgroundColor: Colors.white,
@@ -51,7 +53,7 @@ class BottonNavigationPage extends StatelessWidget {
               Icons.calendar_today,
               size: 40,
             ),
-            color: Colors.black,
+            color: paginaAtual == "PageFive()" ? Colors.black : Colors.grey,
           ),
           label: '',
           backgroundColor: Colors.white,
@@ -70,7 +72,7 @@ class BottonNavigationPage extends StatelessWidget {
               icon: Icon(
                 Icons.search,
                 size: 50,
-                color: Colors.grey,
+                color: paginaAtual == "Page01()" ? Colors.black : Colors.grey,
               )),
           label: 'Search',
           backgroundColor: Colors.white,
@@ -89,7 +91,7 @@ class BottonNavigationPage extends StatelessWidget {
             icon: const Icon(
               Icons.calendar_month,
               size: 45,
-              color: Colors.grey,
+              color: paginaAtual == "Page04()" ? Colors.black : Colors.grey,
             ),
           ),
           label: 'Calendar',
@@ -109,7 +111,7 @@ class BottonNavigationPage extends StatelessWidget {
             icon: Icon(
               Icons.person,
               size: 40,
-              color: Colors.grey,
+              color: paginaAtual == "Page03()" ? Colors.black : Colors.grey,
             ),
           ),
           label: 'Search Specify',

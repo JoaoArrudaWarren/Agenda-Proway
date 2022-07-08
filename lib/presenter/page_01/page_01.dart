@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import '../home/bottom_navigation_page.dart';
 import '../home/home_page.dart';
@@ -16,7 +14,9 @@ class _Page01State extends State<Page01> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const BottonNavigationPage(),
+      bottomNavigationBar: const BottonNavigationPage(
+        paginaAtual: "Page01()",
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -29,7 +29,7 @@ class _Page01State extends State<Page01> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(50.0),
-                    child: Container(
+                    child: SizedBox(
                       height: 130,
                       child: Column(
                         children: [

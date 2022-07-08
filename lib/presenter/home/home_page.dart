@@ -156,7 +156,7 @@ class LineBlackInfiniteHome extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 1,
-      color: Color.fromARGB(255, 0, 0, 0),
+      color: const Color.fromARGB(255, 0, 0, 0),
     );
   }
 }
