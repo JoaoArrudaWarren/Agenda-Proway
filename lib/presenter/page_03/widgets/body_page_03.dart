@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../page_04/page_04.dart';
 import 'doctor_list.dart';
 import 'grey_line.dart';
 
@@ -35,24 +36,38 @@ class BodyPage03 extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Container(
-            width: double.maxFinite,
-            height: 242,
-            decoration: BoxDecoration(
-              image: const DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage('../images/clinica_main.jpg'),
-              ),
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.shade300,
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: const Offset(3, 5),
+          Stack(
+            children: [
+              Container(
+                width: double.maxFinite,
+                height: 242,
+                decoration: BoxDecoration(
+                  image: const DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage('../images/unimed.jpg'),
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.shade300,
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: const Offset(3, 5),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+              Positioned(
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: const Icon(Icons.arrow_back),
+                  color: const Color.fromARGB(255, 127, 131, 134),
+                  iconSize: 35,
+                ),
+              )
+            ],
           ),
           Padding(
             padding: const EdgeInsets.only(top: 12, left: 9.0, bottom: 18),
