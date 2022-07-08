@@ -6,13 +6,16 @@ import '../page_04/page_04.dart';
 import '../page_05/page_05.dart';
 
 class BottonNavigationPage extends StatelessWidget {
+  final String paginaAtual;
   const BottonNavigationPage({
     Key? key,
+    required this.paginaAtual,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      elevation: 5,
       currentIndex: 0,
       items: [
         BottomNavigationBarItem(
@@ -30,10 +33,12 @@ class BottonNavigationPage extends StatelessWidget {
               Icons.home,
               size: 50,
             ),
-            color: Colors.black,
+            color: paginaAtual == "Page01()" ? Colors.black : Colors.grey,
+            hoverColor: Colors.grey.shade300,
+            disabledColor: Colors.red,
           ),
           label: 'Home',
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.grey.shade100,
         ),
         BottomNavigationBarItem(
           icon: IconButton(
@@ -46,31 +51,34 @@ class BottonNavigationPage extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.calendar_today,
               size: 40,
             ),
-            color: Colors.black,
+            color: paginaAtual == "PageFive()" ? Colors.black : Colors.grey,
+            hoverColor: Colors.grey.shade300,
           ),
-          label: 'Reservas',
+          label: 'Calendar',
           backgroundColor: Colors.white,
         ),
         BottomNavigationBarItem(
           icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page01();
-                    }),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.search,
-                size: 50,
-                color: Colors.grey,
-              )),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: ((context) {
+                    return const Page01();
+                  }),
+                ),
+              );
+            },
+            icon: Icon(
+              Icons.search,
+              size: 50,
+              color: paginaAtual == "Page01()" ? Colors.black : Colors.grey,
+            ),
+            hoverColor: Colors.grey.shade300,
+          ),
           label: 'Search',
           backgroundColor: Colors.white,
         ),
@@ -88,8 +96,9 @@ class BottonNavigationPage extends StatelessWidget {
             icon: Icon(
               Icons.calendar_month,
               size: 45,
-              color: Colors.grey,
+              color: paginaAtual == "Page04()" ? Colors.black : Colors.grey,
             ),
+            hoverColor: Colors.grey.shade300,
           ),
           label: 'Calendar',
           backgroundColor: Colors.white,
@@ -100,27 +109,17 @@ class BottonNavigationPage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: ((context) {
-                    return const Page04();
+                    return const Page03();
                   }),
                 ),
               );
             },
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page03();
-                    }),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.person,
-                size: 40,
-                color: Colors.grey,
-              ),
+            icon: Icon(
+              Icons.person,
+              size: 40,
+              color: paginaAtual == "Page03()" ? Colors.black : Colors.grey,
             ),
+            hoverColor: Colors.grey.shade300,
           ),
           label: 'Search Specify',
           backgroundColor: Colors.white,

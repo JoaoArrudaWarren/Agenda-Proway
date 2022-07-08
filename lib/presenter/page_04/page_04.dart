@@ -11,7 +11,9 @@ class Page04 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const BottonNavigationPage(),
+      bottomNavigationBar: const BottonNavigationPage(
+        paginaAtual: "Page04()",
+      ),
       //appBar: AppBar(),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(229, 229, 229, 229),

@@ -16,7 +16,9 @@ class _Page01State extends State<Page01> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const BottonNavigationPage(),
+      bottomNavigationBar: const BottonNavigationPage(
+        paginaAtual: "Page01()",
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
