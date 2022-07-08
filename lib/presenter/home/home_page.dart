@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: BodyHomePage());
+    return const Scaffold(body: BodyHomePage());
   }
 }
 
@@ -21,7 +21,7 @@ class BodyHomePage extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          PaddingBarHome(),
+          const PaddingBarHome(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -35,7 +35,7 @@ class BodyHomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          width: 550,
+                          width: MediaQuery.of(context).size.width - 100,
                           height: 75,
                           decoration: BoxDecoration(
                               color: const Color.fromARGB(255, 219, 219, 219),
@@ -63,7 +63,7 @@ class BodyHomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(30.0),
                       child: Container(
-                        width: 550,
+                        width: MediaQuery.of(context).size.width - 100,
                         height: 75,
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 219, 219, 219),
@@ -90,7 +90,7 @@ class BodyHomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(30.0),
                       child: Container(
-                        width: 550,
+                        width: MediaQuery.of(context).size.width - 100,
                         height: 75,
                         decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 95, 117, 177),
@@ -131,7 +131,7 @@ class BodyHomePage extends StatelessWidget {
               )
             ],
           ),
-          LineBlackInfiniteHome(),
+          const LineBlackInfiniteHome(),
           const Padding(
             padding: EdgeInsets.all(15.0),
             child: Text(
