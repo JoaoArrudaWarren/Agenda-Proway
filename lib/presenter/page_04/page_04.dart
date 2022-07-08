@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
+
 import 'package:table_calendar/table_calendar.dart';
-=======
-<<<<<<< HEAD
+
 import 'package:table_calendar/table_calendar.dart';
-=======
+
 //import 'package:table_calendar/table_calendar.dart';
->>>>>>> 134da0abf8877aabe93f8375c12775925bba2dba
->>>>>>> 23c3117ec591d77974deeda42ac945b4f8cecb92
 
 class Page04 extends StatelessWidget {
   const Page04({Key? key}) : super(key: key);
@@ -16,7 +13,6 @@ class Page04 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       //appBar: AppBar(),
-<<<<<<< HEAD
       body: Column(
         children: [
           Column(
@@ -174,7 +170,6 @@ class Page04 extends StatelessWidget {
                 ),
               ),
             ],
-=======
       appBar: AppBar(
         backgroundColor: Color.fromARGB(229, 229, 229, 229),
         title: const Center(
@@ -226,7 +221,6 @@ class Page04 extends StatelessWidget {
             ),
             label: 'Home',
             backgroundColor: Colors.white,
->>>>>>> 23c3117ec591d77974deeda42ac945b4f8cecb92
           ),
         ],
       ),
