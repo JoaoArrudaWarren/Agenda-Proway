@@ -12,7 +12,9 @@ class Schedule extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar:  const BottonNavigationPage(paginaAtual: 'Page04()',),
+      bottomNavigationBar: const BottonNavigationPage(
+        paginaAtual: 'Schedule()',
+      ),
       //appBar: AppBar(),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(229, 229, 229, 229),
@@ -84,7 +86,7 @@ class Schedule extends StatelessWidget {
                   ),
                 ),
                 const DoctorRowReservation(),
-                const DoctorRowReservation(), 
+                const DoctorRowReservation(),
                 const ConfirmReservationBtn(),
               ],
             ),

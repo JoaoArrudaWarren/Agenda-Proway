@@ -10,13 +10,13 @@ void main() {
   runApp(
     MaterialApp(
       title: 'Weather App',
-      home: PageFive(),
+      home: Reservas(),
       debugShowCheckedModeBanner: false,
     ),
   );
 }
 
-class PageFive extends StatelessWidget {
+class Reservas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +35,7 @@ class PageFive extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottonNavigationPage(
-        paginaAtual: "PageFive()",
+        paginaAtual: "Reservas()",
       ),
       body: SingleChildScrollView(
         child: Column(
