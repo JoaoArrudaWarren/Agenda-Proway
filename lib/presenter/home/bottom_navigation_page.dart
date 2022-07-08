@@ -1,7 +1,6 @@
+import 'package:agenda_warren/presenter/agenda/agenda.dart';
 import 'package:flutter/material.dart';
-
-import '../page_01/page_01.dart';
-import '../page_03/page_03.dart';
+import '../find_service/find_service.dart';
 import '../schedule/schedule.dart';
 import '../page_05/page_05.dart';
 
@@ -108,7 +107,7 @@ class BottonNavigationPage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: ((context) {
-                    return const Page03();
+                    return const Agenda();
                   }),
                 ),
               );
