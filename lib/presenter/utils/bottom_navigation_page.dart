@@ -114,7 +114,7 @@ class BottonNavigationPage extends StatelessWidget {
               );
             },
             icon: Icon(
-              Icons.person,
+              Icons.business,
               size: 40,
               color: paginaAtual == "Agenda()" ? Colors.black : Colors.grey,
             ),
