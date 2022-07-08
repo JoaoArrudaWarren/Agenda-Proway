@@ -15,7 +15,7 @@ class BottonNavigationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      selectedIconTheme: IconThemeData(color: Colors.amber),
+      elevation: 5,
       currentIndex: 0,
       items: [
         BottomNavigationBarItem(
@@ -29,14 +29,16 @@ class BottonNavigationPage extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.home,
               size: 50,
             ),
             color: paginaAtual == "Page01()" ? Colors.black : Colors.grey,
+            hoverColor: Colors.grey.shade300,
+            disabledColor: Colors.red,
           ),
-          label: '',
-          backgroundColor: Colors.white,
+          label: 'Home',
+          backgroundColor: Colors.grey.shade100,
         ),
         BottomNavigationBarItem(
           icon: IconButton(
@@ -49,31 +51,34 @@ class BottonNavigationPage extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.calendar_today,
               size: 40,
             ),
             color: paginaAtual == "PageFive()" ? Colors.black : Colors.grey,
+            hoverColor: Colors.grey.shade300,
           ),
-          label: '',
+          label: 'Calendar',
           backgroundColor: Colors.white,
         ),
         BottomNavigationBarItem(
           icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page01();
-                    }),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.search,
-                size: 50,
-                color: paginaAtual == "Page01()" ? Colors.black : Colors.grey,
-              )),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: ((context) {
+                    return const Page01();
+                  }),
+                ),
+              );
+            },
+            icon: Icon(
+              Icons.search,
+              size: 50,
+              color: paginaAtual == "Page01()" ? Colors.black : Colors.grey,
+            ),
+            hoverColor: Colors.grey.shade300,
+          ),
           label: 'Search',
           backgroundColor: Colors.white,
         ),
@@ -88,11 +93,12 @@ class BottonNavigationPage extends StatelessWidget {
                 ),
               );
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.calendar_month,
               size: 45,
               color: paginaAtual == "Page04()" ? Colors.black : Colors.grey,
             ),
+            hoverColor: Colors.grey.shade300,
           ),
           label: 'Calendar',
           backgroundColor: Colors.white,
@@ -113,6 +119,7 @@ class BottonNavigationPage extends StatelessWidget {
               size: 40,
               color: paginaAtual == "Page03()" ? Colors.black : Colors.grey,
             ),
+            hoverColor: Colors.grey.shade300,
           ),
           label: 'Search Specify',
           backgroundColor: Colors.white,
