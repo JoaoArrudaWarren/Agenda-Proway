@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../page_01/page_01.dart';
+import '../find_service/find_service.dart';
 import '../page_03/page_03.dart';
 import '../schedule/schedule.dart';
 import '../page_05/page_05.dart';

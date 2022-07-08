@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../home/home_page.dart';
 
 import '../home/home_page.dart';
-import '../page_01/page_01.dart';
-import '../page_04/page_04.dart';
+import '../find_service/find_service.dart';
+import '../schedule/schedule.dart';
 
 void main() {
   runApp(

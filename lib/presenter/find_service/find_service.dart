@@ -47,36 +47,42 @@ class _FindServiceState extends State<FindService> {
                           const SizedBox(
                             height: 20,
                           ),
-                          Container(
-                            width: 550,
-                            height: 75,
-                            decoration: BoxDecoration(
-                                color: const Color.fromARGB(255, 219, 219, 219),
-                                borderRadius: BorderRadius.circular(20)),
-                            child: Padding(
-                              padding: const EdgeInsets.all(1.0),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: const [
-                                  Text(
-                                    "Qual cidade você está?",
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 124, 124, 124),
-                                      fontSize: 30,
-                                      fontFamily: "Sarala",
-                                    ),
-                                  ),
-                                  Icon(
-                                    Icons.location_on_rounded,
-                                    size: 40,
-                                    color: Color.fromARGB(255, 95, 117, 177),
-                                  )
-                                ],
-                              ),
-                            ),
+                          TextField(
+                            expands: false,
+                            decoration: InputDecoration(
+                                label: Text("Qual cidade você está?")),
                           ),
+
+                          // Container(
+                          //   width: 550,
+                          //   height: 75,
+                          //   decoration: BoxDecoration(
+                          //       color: const Color.fromARGB(255, 219, 219, 219),
+                          //       borderRadius: BorderRadius.circular(20)),
+                          //   child: Padding(
+                          //     padding: const EdgeInsets.all(1.0),
+                          //     child: Row(
+                          //       mainAxisAlignment:
+                          //           MainAxisAlignment.spaceAround,
+                          //       crossAxisAlignment: CrossAxisAlignment.center,
+                          //       children: const [
+                          //         Text(
+                          //           "Qual cidade você está?",
+                          //           style: TextStyle(
+                          //             color: Color.fromARGB(255, 124, 124, 124),
+                          //             fontSize: 30,
+                          //             fontFamily: "Sarala",
+                          //           ),
+                          //         ),
+                          //         Icon(
+                          //           Icons.location_on_rounded,
+                          //           size: 40,
+                          //           color: Color.fromARGB(255, 95, 117, 177),
+                          //         )
+                          //       ],
+                          //     ),
+                          //   ),
+                          // ),
                         ],
                       ),
                     ),
