@@ -21,58 +21,37 @@ class RowAcessHome extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
+                  SizedBox(
                     width: MediaQuery.of(context).size.width - 100,
                     height: 75,
-                    decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 219, 219, 219),
-                        borderRadius: BorderRadius.circular(20)),
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: const [
-                          Text(
-                            "E-mail",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 124, 124, 124),
-                              fontSize: 30,
-                              fontFamily: "Sarala",
-                            ),
-                          ),
-                        ],
+                    child: const TextField(
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 95, 117, 177),
+                        fontSize: 20,
                       ),
+                      expands: false,
+                      decoration:
+                          InputDecoration(label: Text("Digite seu Login")),
                     ),
                   ),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.all(30.0),
-                child: Container(
-                  width: MediaQuery.of(context).size.width - 100,
-                  height: 75,
-                  decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 219, 219, 219),
-                      borderRadius: BorderRadius.circular(20)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: const [
-                        Text(
-                          "senha",
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 124, 124, 124),
-                            fontSize: 30,
-                            fontFamily: "Sarala",
-                          ),
-                        ),
-                      ],
+              Row(
+                children: [
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width - 100,
+                    height: 75,
+                    child: const TextField(
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 95, 117, 177),
+                        fontSize: 20,
+                      ),
+                      expands: false,
+                      decoration:
+                          InputDecoration(label: Text("Digite sua Senha")),
                     ),
                   ),
-                ),
+                ],
               ),
               Padding(
                 padding: const EdgeInsets.all(30.0),

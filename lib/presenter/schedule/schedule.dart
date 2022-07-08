@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-import '../home/bottom_navigation_page.dart';
+import '../utils/bottom_navigation_page.dart';
 import 'widgets/available_times.dart';
 import 'widgets/confirm _reservation_btn.dart';
 import 'widgets/doctor_row_reservation.dart';

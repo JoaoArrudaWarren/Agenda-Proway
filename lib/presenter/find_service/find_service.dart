@@ -48,6 +48,10 @@ class _FindServiceState extends State<FindService> {
                             height: 20,
                           ),
                           TextField(
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 95, 117, 177),
+                              fontSize: 20,
+                            ),
                             expands: false,
                             decoration: InputDecoration(
                                 label: Text("Qual cidade você está?")),

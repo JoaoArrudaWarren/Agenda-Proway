@@ -1,4 +1,4 @@
-import 'package:agenda_warren/presenter/home/bottom_navigation_page.dart';
+import 'package:agenda_warren/presenter/utils/bottom_navigation_page.dart';
 import 'package:flutter/material.dart';
 import '../home/home_page.dart';
 
@@ -34,7 +34,7 @@ class Reservas extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottonNavigationPage(
+      bottomNavigationBar: const BottonNavigationPage(
         paginaAtual: "Reservas()",
       ),
       body: SingleChildScrollView(
