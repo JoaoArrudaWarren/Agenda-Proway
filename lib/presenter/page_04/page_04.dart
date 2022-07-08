@@ -179,29 +179,6 @@ class Page04 extends StatelessWidget {
                   children: [
                     const Padding(
                       padding: EdgeInsets.all(8.0),
-                      // child: Row(
-                      //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      //   children: [
-                      //     IconButton(
-                      //       onPressed: () {
-                      //         Navigator.pop(context);
-                      //       },
-                      //       icon: const Icon(Icons.arrow_back),
-                      //       color: const Color.fromARGB(255, 112, 107, 107),
-                      //       iconSize: 35,
-                      //     ),
-                      //     const Text(
-                      //       'Fazer uma reserva',
-                      //       style: TextStyle(
-                      //           color: Color.fromRGBO(95, 117, 177, 1),
-                      //           fontSize: 22,
-                      //           fontWeight: FontWeight.bold),
-                      //     ),
-                      //     const SizedBox(
-                      //       width: 50,
-                      //     ),
-                      //   ],
-                      // ),
                     ),
                     Container(
                       color: Colors.black,
