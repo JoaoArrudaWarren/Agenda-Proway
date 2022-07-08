@@ -35,7 +35,6 @@ class BottonNavigationPage extends StatelessWidget {
             ),
             color: paginaAtual == "Page01()" ? Colors.black : Colors.grey,
             hoverColor: Colors.grey.shade300,
-            disabledColor: Colors.red,
           ),
           label: 'Home',
           backgroundColor: Colors.grey.shade100,
