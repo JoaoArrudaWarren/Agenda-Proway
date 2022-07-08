@@ -4,14 +4,14 @@ import '../home/bottom_navigation_page.dart';
 import '../home/widgets/line_black_infinity_home.dart';
 import '../home/widgets/padding_bar_home.dart';
 
-class PageOne extends StatefulWidget {
-  const PageOne({Key? key}) : super(key: key);
+class FindService extends StatefulWidget {
+  const FindService({Key? key}) : super(key: key);
 
   @override
-  State<PageOne> createState() => _PageOneState();
+  State<FindService> createState() => _FindServiceState();
 }
 
-class _PageOneState extends State<PageOne> {
+class _FindServiceState extends State<FindService> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,8 +23,7 @@ class _PageOneState extends State<PageOne> {
           children: [
             const PaddingBarHome(),
             const LineBlackInfiniteHome(),
-            // ignore: sized_box_for_whitespace
-            Container(
+            SizedBox(
               height: 230,
               child: Column(
                 children: [
