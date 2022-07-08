@@ -1,3 +1,4 @@
+import 'package:agenda_warren/presenter/home/bottom_navigation_page.dart';
 import 'package:flutter/material.dart';
 import '../home/home_page.dart';
 
@@ -33,121 +34,7 @@ class PageFive extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
-        items: [
-          BottomNavigationBarItem(
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page01();
-                    }),
-                  ),
-                );
-              },
-              icon: const Icon(
-                Icons.home,
-                size: 60,
-              ),
-              color: Colors.black,
-            ),
-            label: 'Home',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return PageFive();
-                    }),
-                  ),
-                );
-              },
-              icon: const Icon(
-                Icons.calendar_today,
-                size: 60,
-              ),
-              color: Colors.black,
-            ),
-            label: 'Reservas',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: IconButton(
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: ((context) {
-                        return const Page01();
-                      }),
-                    ),
-                  );
-                },
-                icon: const Icon(
-                  Icons.search,
-                  size: 60,
-                  color: Colors.grey,
-                )),
-            label: 'Search',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page04();
-                    }),
-                  ),
-                );
-              },
-              icon: const Icon(
-                Icons.calendar_month,
-                size: 60,
-                color: Colors.grey,
-              ),
-            ),
-            label: 'Calendar',
-            backgroundColor: Colors.white,
-          ),
-          BottomNavigationBarItem(
-            icon: IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return const Page04();
-                    }),
-                  ),
-                );
-              },
-              icon: IconButton(
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: ((context) {
-                        return const Page01();
-                      }),
-                    ),
-                  );
-                },
-                icon: const Icon(
-                  Icons.person,
-                  size: 60,
-                  color: Colors.grey,
-                ),
-              ),
-            ),
-            label: 'Home',
-            backgroundColor: Colors.white,
-          ),
-        ],
-      ),
+      bottomNavigationBar: BottonNavigationPage(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
