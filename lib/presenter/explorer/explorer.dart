@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../home/bottom_navigation_page.dart';
+
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       title: 'Screen',
       home: Explorer(),
       debugShowCheckedModeBanner: false,
@@ -11,9 +13,13 @@ void main() {
 }
 
 class Explorer extends StatelessWidget {
+  const Explorer({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar:
+          const BottonNavigationPage(paginaAtual: "Explorer()"),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(229, 229, 229, 229),
         title: Column(
