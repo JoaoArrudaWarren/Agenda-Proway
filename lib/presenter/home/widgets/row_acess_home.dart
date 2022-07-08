@@ -66,6 +66,7 @@ class _RowAcessHomeState extends State<RowAcessHome> {
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
                       child: TextField(
+                        obscureText: true,
                         controller: passwordController,
                         keyboardType: TextInputType.visiblePassword,
                         style: const TextStyle(
