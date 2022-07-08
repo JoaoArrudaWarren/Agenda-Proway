@@ -29,8 +29,8 @@ List<String> prices = [
   'S/.110,00'
 ];
 
-class BodyPage03 extends StatelessWidget {
-  const BodyPage03({Key? key}) : super(key: key);
+class AgendaBodyPage extends StatelessWidget {
+  const AgendaBodyPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Column(
