@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:agenda_warren/presenter/utils/bottom_navigation_page.dart';
+import '../utils/bottom_navigation_page.dart';
 
 import 'widget/consultas.dart';
 

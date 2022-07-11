@@ -26,20 +26,9 @@ class Explorer extends StatelessWidget {
           children: const [
             Center(
               child: Text(
-                'Explorar',
+                'Lista de medicos',
                 style: TextStyle(
                   color: Color.fromARGB(255, 95, 117, 177),
-                  fontSize: 22,
-                  fontWeight: FontWeight.w700,
-                  fontFamily: 'Sarala',
-                ),
-              ),
-            ),
-            Visibility(
-              child: Text(
-                'Médico',
-                style: TextStyle(
-                  color: Color.fromARGB(127, 54, 50, 50),
                   fontSize: 22,
                   fontWeight: FontWeight.w700,
                   fontFamily: 'Sarala',
@@ -60,28 +49,24 @@ class Explorer extends StatelessWidget {
               ),
               child: Container(
                 width: 500,
-                height: 60,
+                height: 50,
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(228, 229, 234, 1),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: Row(
-                  children: const [
-                    Padding(
-                      padding: EdgeInsets.only(
-                        left: 20,
-                      ),
-                      child: Text(
-                        'Pesquisar',
-                        style: TextStyle(
-                          fontFamily: 'Sarala',
-                          fontSize: 18,
-                          fontWeight: FontWeight.w200,
-                          color: Color.fromARGB(127, 54, 50, 50),
-                        ),
-                      ),
+                child: const TextField(
+                  cursorColor: Color.fromARGB(255, 95, 117, 177),
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Color.fromRGBO(228, 229, 234, 1),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                          color: Color.fromARGB(255, 95, 117, 177), width: 1),
                     ),
-                  ],
+                    labelText: 'Pesquisar',
+                    labelStyle:
+                        TextStyle(color: Color.fromARGB(255, 95, 117, 177)),
+                  ),
                 ),
               ),
             ),
