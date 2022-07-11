@@ -21,7 +21,7 @@ class Explorer extends StatelessWidget {
       bottomNavigationBar:
           const BottonNavigationPage(paginaAtual: "Explorer()"),
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(229, 229, 229, 229),
+        backgroundColor: const Color.fromARGB(229, 229, 229, 229),
         title: Column(
           children: const [
             Center(
@@ -62,7 +62,7 @@ class Explorer extends StatelessWidget {
                 width: 500,
                 height: 60,
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(228, 229, 234, 1),
+                  color: const Color.fromRGBO(228, 229, 234, 1),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Row(
@@ -89,7 +89,7 @@ class Explorer extends StatelessWidget {
               height: 1,
               width: 500,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color.fromARGB(127, 54, 50, 50),
                 ),
               ),
@@ -99,7 +99,7 @@ class Explorer extends StatelessWidget {
                 horizontal: 20,
                 vertical: 20,
               ),
-              child: Container(
+              child: SizedBox(
                 height: 120,
                 width: 700,
                 // color: Colors.black,
@@ -129,7 +129,7 @@ class Explorer extends StatelessWidget {
               height: 1,
               width: 500,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color.fromARGB(127, 54, 50, 50),
                 ),
               ),
@@ -139,7 +139,7 @@ class Explorer extends StatelessWidget {
                 horizontal: 20,
                 vertical: 20,
               ),
-              child: Container(
+              child: SizedBox(
                 height: 120,
                 width: 700,
                 // color: Colors.black,
@@ -169,7 +169,7 @@ class Explorer extends StatelessWidget {
               height: 1,
               width: 500,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color.fromARGB(127, 54, 50, 50),
                 ),
               ),
@@ -179,7 +179,7 @@ class Explorer extends StatelessWidget {
                 horizontal: 20,
                 vertical: 20,
               ),
-              child: Container(
+              child: SizedBox(
                 height: 120,
                 width: 700,
                 // color: Colors.black,
@@ -209,7 +209,7 @@ class Explorer extends StatelessWidget {
               height: 1,
               width: 500,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color.fromARGB(127, 54, 50, 50),
                 ),
               ),

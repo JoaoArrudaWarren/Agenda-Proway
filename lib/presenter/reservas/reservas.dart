@@ -1,14 +1,9 @@
 import 'package:agenda_warren/presenter/utils/bottom_navigation_page.dart';
 import 'package:flutter/material.dart';
-import '../home/home_page.dart';
-
-import '../home/home_page.dart';
-import '../find_service/find_service.dart';
-import '../schedule/schedule.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       title: 'Weather App',
       home: Reservas(),
       debugShowCheckedModeBanner: false,
@@ -17,11 +12,13 @@ void main() {
 }
 
 class Reservas extends StatelessWidget {
+  const Reservas({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(229, 229, 229, 229),
+        backgroundColor: const Color.fromARGB(229, 229, 229, 229),
         title: const Center(
           child: Text(
             'Minhas Reservas',
