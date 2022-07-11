@@ -57,24 +57,28 @@ class Consultas extends StatelessWidget {
       children: [
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
-            Text(
-              'Consulta Dra. Cecilia Maria',
-              style: TextStyle(
-                color: Color.fromARGB(204, 22, 22, 21),
-                fontFamily: 'Sarala',
-                fontWeight: FontWeight.w400,
-                fontSize: 18,
-              ),
-            ),
-            Text(
-              'Clínica de São José',
-              style: TextStyle(
-                color: Color.fromARGB(139, 22, 22, 21),
-                fontFamily: 'Sarala',
-                fontWeight: FontWeight.w400,
-                fontSize: 16,
-              ),
+          children: [
+            Row(
+              children: const [
+                Text(
+                  'Consulta Dra. Cecilia Maria',
+                  style: TextStyle(
+                    color: Color.fromARGB(204, 22, 22, 21),
+                    fontFamily: 'Sarala',
+                    fontWeight: FontWeight.w400,
+                    fontSize: 18,
+                  ),
+                ),
+                Text(
+                  'Clínica de São José',
+                  style: TextStyle(
+                    color: Color.fromARGB(139, 22, 22, 21),
+                    fontFamily: 'Sarala',
+                    fontWeight: FontWeight.w400,
+                    fontSize: 16,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -174,8 +178,8 @@ class Consultas extends StatelessWidget {
           child: Row(
             children: [
               Container(
-                width: 150,
-                height: 40,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 95, 117, 177),
                   borderRadius: BorderRadius.circular(10),
@@ -199,8 +203,8 @@ class Consultas extends StatelessWidget {
                 width: 70,
               ),
               Container(
-                width: 150,
-                height: 40,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 decoration: BoxDecoration(
                   color: Colors.red,
                   borderRadius: BorderRadius.circular(10),
