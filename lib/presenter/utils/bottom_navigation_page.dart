@@ -45,7 +45,7 @@ class BottonNavigationPage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: ((context) {
-                    return Reservas();
+                    return const Reservas();
                   }),
                 ),
               );

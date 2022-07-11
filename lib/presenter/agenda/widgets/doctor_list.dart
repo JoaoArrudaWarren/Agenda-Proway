@@ -56,7 +56,7 @@ class AgendaBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isSelected = false;
+    //bool isSelected = false;
     return Container(
       alignment: Alignment.center,
       width: 103,
@@ -70,7 +70,7 @@ class AgendaBtn extends StatelessWidget {
         onPressed: () => {
           Navigator.of(context)
               .push(MaterialPageRoute(builder: (context) => const Schedule())),
-          isSelected = true,
+          //isSelected = true,
         },
         child: const Text(
           "Agendar",
