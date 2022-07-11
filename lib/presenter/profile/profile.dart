@@ -1,10 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-import 'widgets/profile_body.dart';
+import '../reservas/reservas.dart';
 
 class Profile extends StatefulWidget {
   const Profile({
@@ -138,6 +136,29 @@ class _ProfileState extends State<Profile> {
                         ],
                       ),
                       const SizedBox(height: 20),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 95, 117, 177),
+                            borderRadius: BorderRadius.circular(15)),
+                        child: MaterialButton(
+                          onPressed: (() {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: ((context) {
+                                  return const Reservas();
+                                }),
+                              ),
+                            );
+                          }),
+                          child: const Text(
+                            "Minhas Reservas",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              fontSize: 30,
+                            ),
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ],
