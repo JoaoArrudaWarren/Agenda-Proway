@@ -1,10 +1,6 @@
-import 'package:agenda_warren/presenter/home/bottom_navigation_page.dart';
 import 'package:flutter/material.dart';
-import '../home/home_page.dart';
 
-import '../home/home_page.dart';
-import '../find_service/find_service.dart';
-import '../schedule/schedule.dart';
+import '../home/bottom_navigation_page.dart';
 
 void main() {
   runApp(
@@ -34,7 +30,7 @@ class PageFive extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottonNavigationPage(
+      bottomNavigationBar: const BottonNavigationPage(
         paginaAtual: "PageFive()",
       ),
       body: SingleChildScrollView(
