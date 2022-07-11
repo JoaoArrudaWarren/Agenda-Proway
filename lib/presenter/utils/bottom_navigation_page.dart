@@ -2,6 +2,7 @@ import '../agenda/agenda.dart';
 import 'package:flutter/material.dart';
 import '../explorer/explorer.dart';
 import '../find_service/find_service.dart';
+import '../profile/profile.dart';
 import '../schedule/schedule.dart';
 import '../reservas/reservas.dart';
 
@@ -87,27 +88,6 @@ class BottonNavigationPage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: ((context) {
-                    return const Schedule();
-                  }),
-                ),
-              );
-            },
-            icon: Icon(
-              Icons.calendar_month,
-              size: 45,
-              color: paginaAtual == "Schedule()" ? Colors.black : Colors.grey,
-            ),
-            hoverColor: Colors.grey.shade300,
-          ),
-          label: 'Calendar',
-          backgroundColor: Colors.white,
-        ),
-        BottomNavigationBarItem(
-          icon: IconButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: ((context) {
                     return const Agenda();
                   }),
                 ),
@@ -121,6 +101,27 @@ class BottonNavigationPage extends StatelessWidget {
             hoverColor: Colors.grey.shade300,
           ),
           label: 'Search Specify',
+          backgroundColor: Colors.white,
+        ),
+        BottomNavigationBarItem(
+          icon: IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: ((context) {
+                    return const Profile();
+                  }),
+                ),
+              );
+            },
+            icon: Icon(
+              Icons.person,
+              size: 45,
+              color: paginaAtual == "Profile()" ? Colors.black : Colors.grey,
+            ),
+            hoverColor: Colors.grey.shade300,
+          ),
+          label: 'Profile',
           backgroundColor: Colors.white,
         ),
       ],
