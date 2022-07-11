@@ -24,25 +24,20 @@ class _FindServiceState extends State<FindService> {
             const PaddingBarHome(),
             const LineBlackInfiniteHome(),
             SizedBox(
-              height: 230,
+              // height: 230,
               child: Column(
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(50.0),
                     child: SizedBox(
-                      height: 130,
+                      // height: 130,
                       child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
-                              Text(
-                                "Encontre serviços por cidade",
-                                style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                    fontSize: 30),
-                              ),
-                            ],
+                        children: const[
+                          Text(
+                            "Encontre serviços por cidade",
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0),
+                                fontSize: 30),
                           ),
                           const SizedBox(
                             height: 20,

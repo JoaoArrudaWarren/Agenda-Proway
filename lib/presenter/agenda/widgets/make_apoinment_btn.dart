@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../schedule/schedule.dart';
+import '../../schedule/schedule_page.dart';
 
 class MakeAppoinmentBtn extends StatelessWidget {
   const MakeAppoinmentBtn({
