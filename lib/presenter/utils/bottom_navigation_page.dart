@@ -1,4 +1,4 @@
-import 'package:agenda_warren/presenter/agenda/agenda.dart';
+import '../agenda/agenda.dart';
 import 'package:flutter/material.dart';
 import '../explorer/explorer.dart';
 import '../find_service/find_service.dart';

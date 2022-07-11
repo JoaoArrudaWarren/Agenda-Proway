@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utils/bottom_navigation_page.dart';
+import 'widget/explorer_doctor.dart';
 
 void main() {
   runApp(
@@ -38,7 +39,6 @@ class Explorer extends StatelessWidget {
           ],
         ),
       ),
-      //  bottomNavigationBar: BottonNavigationPage(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -70,134 +70,47 @@ class Explorer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: 1,
-              width: 500,
-              child: Container(
-                decoration: const BoxDecoration(
-                  color: Color.fromARGB(127, 54, 50, 50),
-                ),
-              ),
+            const ExplorerDoctor(
+              adress: 'Av. Maracutai, 340',
+              city: 'Agua Verde',
+              doctor: 'Dr. Nelson R.',
+              drImage: '../images/doctor01.jpg',
+              hospital: 'Santa Helena',
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 20,
-                vertical: 20,
-              ),
-              child: SizedBox(
-                height: 120,
-                width: 700,
-                // color: Colors.black,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      'Clínica Santa Helena',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                    Text(
-                      'Avenida Maracutai, 340\nAgua verde\n(11) 7997394234',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+            const ExplorerDoctor(
+              adress: 'R. São Paulo, 3090',
+              city: 'Liberdade',
+              doctor: 'Dra. Mayara M.',
+              drImage: '../images/doctor02.jpg',
+              hospital: 'Santa Patricia',
             ),
-            SizedBox(
-              height: 1,
-              width: 500,
-              child: Container(
-                decoration: const BoxDecoration(
-                  color: Color.fromARGB(127, 54, 50, 50),
-                ),
-              ),
+            const ExplorerDoctor(
+              adress: 'Av. Paulista, 4960',
+              city: 'Itapemirim',
+              doctor: 'Dr. Arnaldo A.',
+              drImage: '../images/doctor03.jpg',
+              hospital: 'Tezza',
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 20,
-                vertical: 20,
-              ),
-              child: SizedBox(
-                height: 120,
-                width: 700,
-                // color: Colors.black,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      'Clínica Santa Helena',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                    Text(
-                      'Avenida Maracutai, 340\nAgua verde\n(11) 7997394234',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+            const ExplorerDoctor(
+              adress: 'Av. Maracutai, 340',
+              city: 'Agua Verde',
+              doctor: 'Dr. Nelson R.',
+              drImage: '../images/doctor01.jpg',
+              hospital: 'Santa Helena',
             ),
-            SizedBox(
-              height: 1,
-              width: 500,
-              child: Container(
-                decoration: const BoxDecoration(
-                  color: Color.fromARGB(127, 54, 50, 50),
-                ),
-              ),
+            const ExplorerDoctor(
+              adress: 'R. São Paulo, 3090',
+              city: 'Liberdade',
+              doctor: 'Dra. Mayara M.',
+              drImage: '../images/doctor02.jpg',
+              hospital: 'Santa Patricia',
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 20,
-                vertical: 20,
-              ),
-              child: SizedBox(
-                height: 120,
-                width: 700,
-                // color: Colors.black,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      'Clínica Santa Helena',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                    Text(
-                      'Avenida Maracutai, 340\nAgua verde\n(11) 7997394234',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 1,
-              width: 500,
-              child: Container(
-                decoration: const BoxDecoration(
-                  color: Color.fromARGB(127, 54, 50, 50),
-                ),
-              ),
+            const ExplorerDoctor(
+              adress: 'Av. Paulista, 4960',
+              city: 'Itapemirim',
+              doctor: 'Dr. Arnaldo A.',
+              drImage: '../images/doctor03.jpg',
+              hospital: 'Tezza',
             ),
           ],
         ),
