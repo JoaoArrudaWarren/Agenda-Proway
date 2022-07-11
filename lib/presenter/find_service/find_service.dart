@@ -37,7 +37,7 @@ class _FindServiceState extends State<FindService> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: const [
                               Text(
-                                "Agende seus serviços",
+                                "Encontre serviços por cidade",
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 0, 0, 0),
                                     fontSize: 30),
