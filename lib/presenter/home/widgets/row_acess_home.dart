@@ -112,8 +112,8 @@ class _RowAcessHomeState extends State<RowAcessHome> {
                             ),
                           ),
                           onPressed: () {
-                            if (emailController.text == "agenda" &&
-                                passwordController.text == "proway") {
+                            if (emailController.text == "" &&
+                                passwordController.text == "") {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
                                   builder: ((context) {

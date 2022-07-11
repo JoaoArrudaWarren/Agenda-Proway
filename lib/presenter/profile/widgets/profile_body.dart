@@ -29,7 +29,7 @@ class ProfileBody extends StatelessWidget {
                     child: const Image(
                       fit: BoxFit.cover,
                       height: 10,
-                      image: AssetImage('../../images/central-rs.jpg'),
+                      image: AssetImage('images/central-rs.jpg'),
                     ),
                   ),
                 ),
@@ -78,7 +78,7 @@ class ProfileBody extends StatelessWidget {
                   height: 242,
                   alignment: Alignment.center,
                   child: const CircleAvatar(
-                    backgroundImage: AssetImage('../../images/professor.jpg'),
+                    backgroundImage: AssetImage('images/professor.jpg'),
                     radius: 70,
                   ),
                 ),
