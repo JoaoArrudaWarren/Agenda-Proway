@@ -56,17 +56,11 @@ class AgendaBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //bool isSelected = false;
     return Container(
       alignment: Alignment.center,
       width: 103,
       height: 42,
-      // decoration: BoxDecoration(
-      //   borderRadius: BorderRadius.circular(15),
-      //   color: const Color.fromARGB(255, 110, 132, 218),
-      // ),
       child: ElevatedButton(
-        // style: const ButtonStyle(backgroundColor: ),
         onPressed: () => {
           Navigator.of(context)
               .push(MaterialPageRoute(builder: (context) => const Schedule())),

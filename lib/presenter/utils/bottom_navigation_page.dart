@@ -1,10 +1,8 @@
-import '../agenda/agenda.dart';
+import '../agenda/agenda_page.dart';
 import 'package:flutter/material.dart';
 import '../explorer/explorer.dart';
 import '../find_service/find_service.dart';
 import '../profile/profile.dart';
-import '../schedule/schedule_page.dart';
-import '../reservas/reservas.dart';
 
 class BottonNavigationPage extends StatelessWidget {
   final String paginaAtual;
@@ -40,27 +38,6 @@ class BottonNavigationPage extends StatelessWidget {
           label: '',
           backgroundColor: Colors.grey.shade100,
         ),
-        // BottomNavigationBarItem(
-        //   icon: IconButton(
-        //     onPressed: () {
-        //       Navigator.of(context).push(
-        //         MaterialPageRoute(
-        //           builder: ((context) {
-        //             return const Reservas();
-        //           }),
-        //         ),
-        //       );
-        //     },
-        //     icon: const Icon(
-        //       Icons.calendar_today,
-        //       size: 40,
-        //     ),
-        //     color: paginaAtual == "Reservas()" ? Colors.black : Colors.grey,
-        //     hoverColor: Colors.grey.shade300,
-        //   ),
-        //   label: 'Reservs',
-        //   backgroundColor: Colors.white,
-        // ),
         BottomNavigationBarItem(
           icon: IconButton(
             onPressed: () {
