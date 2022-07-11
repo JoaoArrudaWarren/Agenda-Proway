@@ -42,7 +42,7 @@ class AgendaBodyPage extends StatelessWidget {
               decoration: BoxDecoration(
                 image: const DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('../images/unimed.jpg'),
+                  image: AssetImage('images/unimed.jpg'),
                 ),
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: [
