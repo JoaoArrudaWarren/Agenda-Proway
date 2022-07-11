@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
+import 'explorer/explorer.dart';
 import 'home/home_page.dart';
-import 'reservas/reservas.dart';
 
 void main() {
   runApp(
     const MaterialApp(
       title: 'Agenda Warren',
-      home: HomePage(),
+      home: Explorer(),
       debugShowCheckedModeBanner: false,
     ),
   );
