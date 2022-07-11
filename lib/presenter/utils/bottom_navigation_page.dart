@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../explorer/explorer.dart';
 import '../find_service/find_service.dart';
 import '../profile/profile.dart';
-import '../schedule/schedule.dart';
+import '../schedule/schedule_page.dart';
 import '../reservas/reservas.dart';
 
 class BottonNavigationPage extends StatelessWidget {

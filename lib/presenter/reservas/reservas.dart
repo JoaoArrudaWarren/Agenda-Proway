@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utils/bottom_navigation_page.dart';
-
-import 'widget/consultas.dart';
+import 'widgets/consultas.dart';
 
 void main() {
   runApp(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../schedule/schedule.dart';
+import '../../schedule/schedule_page.dart';
 
 class DoctorList extends StatelessWidget {
   final String title;
