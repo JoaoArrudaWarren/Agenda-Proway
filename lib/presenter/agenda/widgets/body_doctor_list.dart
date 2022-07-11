@@ -38,7 +38,10 @@ class BodyDoctorList extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         itemCount: doctors.length,
         itemBuilder: (context, index) {
-          return DoctorList(title: doctors[index], price: prices[index]);
+          return DoctorList(
+            title: doctors[index],
+            price: prices[index],
+          );
         },
       ),
     );

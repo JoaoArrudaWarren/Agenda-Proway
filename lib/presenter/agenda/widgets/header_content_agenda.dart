@@ -8,7 +8,11 @@ class HeaderContentAgenda extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 12, left: 9.0, bottom: 18),
+      padding: const EdgeInsets.only(
+        top: 12,
+        left: 9.0,
+        bottom: 18,
+      ),
       child: Column(
         children: [
           Row(
@@ -27,7 +31,9 @@ class HeaderContentAgenda extends StatelessWidget {
               Text(
                 'Av. Janio Quadro, 250',
                 style: TextStyle(
-                    color: Color.fromARGB(255, 127, 131, 134), fontSize: 24),
+                  color: Color.fromARGB(255, 127, 131, 134),
+                  fontSize: 24,
+                ),
               ),
             ],
           ),
@@ -36,7 +42,9 @@ class HeaderContentAgenda extends StatelessWidget {
               Text(
                 'Jardim - Sao Paulo',
                 style: TextStyle(
-                    color: Color.fromARGB(255, 127, 131, 134), fontSize: 24),
+                  color: Color.fromARGB(255, 127, 131, 134),
+                  fontSize: 24,
+                ),
               ),
             ],
           ),
@@ -45,7 +53,9 @@ class HeaderContentAgenda extends StatelessWidget {
               Text(
                 'Tel: (11) 90000-5463',
                 style: TextStyle(
-                    color: Color.fromARGB(255, 127, 131, 134), fontSize: 24),
+                  color: Color.fromARGB(255, 127, 131, 134),
+                  fontSize: 24,
+                ),
               ),
             ],
           ),
