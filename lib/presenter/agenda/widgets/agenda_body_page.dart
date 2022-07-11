@@ -60,7 +60,10 @@ class AgendaBodyPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                icon: const Icon(Icons.arrow_back),
+                icon: const Padding(
+                  padding: EdgeInsets.only(top: 20),
+                  child: Icon(Icons.arrow_back),
+                ),
                 color: const Color.fromARGB(255, 127, 131, 134),
                 iconSize: 35,
               ),
