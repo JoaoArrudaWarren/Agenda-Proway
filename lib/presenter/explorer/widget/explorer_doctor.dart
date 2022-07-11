@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../schedule/schedule.dart';
+
 class ExplorerDoctor extends StatelessWidget {
   final String doctor;
   final String drImage;
@@ -24,55 +26,62 @@ class ExplorerDoctor extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        'Clínica $hospital',
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        '$adress\n$city\n(11) 7997394234',
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              SizedBox(
-                width: 85,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+          GestureDetector(
+            onTap: () => {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const Schedule())),
+              //isSelected = true,
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CircleAvatar(
-                      radius: 30,
-                      backgroundImage: AssetImage(drImage),
+                    Row(
+                      children: [
+                        Text(
+                          'Clínica $hospital',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
                     ),
-                    const SizedBox(height: 5),
-                    Text(
-                      doctor,
-                      style: const TextStyle(fontSize: 12.5),
-                    )
+                    Row(
+                      children: [
+                        Text(
+                          '$adress\n$city\n(11) 7997394234',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
-              ),
-            ],
+                SizedBox(
+                  width: 85,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      CircleAvatar(
+                        radius: 30,
+                        backgroundImage: AssetImage(drImage),
+                      ),
+                      const SizedBox(height: 5),
+                      Text(
+                        doctor,
+                        style: const TextStyle(fontSize: 12.5),
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
           SizedBox(
             height: 30,
