@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../schedule/schedule.dart';
 import 'doctor_list.dart';
 import 'grey_line.dart';
 

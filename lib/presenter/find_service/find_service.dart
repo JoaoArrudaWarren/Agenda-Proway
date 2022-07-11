@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../home/bottom_navigation_page.dart';
+import '../utils/bottom_navigation_page.dart';
 import '../home/widgets/line_black_infinity_home.dart';
 import '../home/widgets/padding_bar_home.dart';
 
@@ -16,7 +16,7 @@ class _FindServiceState extends State<FindService> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: const BottonNavigationPage(
-        paginaAtual: "Page01()",
+        paginaAtual: "FindService()",
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -47,42 +47,21 @@ class _FindServiceState extends State<FindService> {
                           const SizedBox(
                             height: 20,
                           ),
-                          TextField(
+                          const TextField(
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 95, 117, 177),
+                              fontSize: 20,
+                            ),
                             expands: false,
                             decoration: InputDecoration(
-                                label: Text("Qual cidade você está?")),
+                              label: Text(
+                                "Qual cidade você está?",
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 95, 117, 177),
+                                ),
+                              ),
+                            ),
                           ),
-
-                          // Container(
-                          //   width: 550,
-                          //   height: 75,
-                          //   decoration: BoxDecoration(
-                          //       color: const Color.fromARGB(255, 219, 219, 219),
-                          //       borderRadius: BorderRadius.circular(20)),
-                          //   child: Padding(
-                          //     padding: const EdgeInsets.all(1.0),
-                          //     child: Row(
-                          //       mainAxisAlignment:
-                          //           MainAxisAlignment.spaceAround,
-                          //       crossAxisAlignment: CrossAxisAlignment.center,
-                          //       children: const [
-                          //         Text(
-                          //           "Qual cidade você está?",
-                          //           style: TextStyle(
-                          //             color: Color.fromARGB(255, 124, 124, 124),
-                          //             fontSize: 30,
-                          //             fontFamily: "Sarala",
-                          //           ),
-                          //         ),
-                          //         Icon(
-                          //           Icons.location_on_rounded,
-                          //           size: 40,
-                          //           color: Color.fromARGB(255, 95, 117, 177),
-                          //         )
-                          //       ],
-                          //     ),
-                          //   ),
-                          // ),
                         ],
                       ),
                     ),

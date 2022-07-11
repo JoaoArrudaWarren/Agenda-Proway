@@ -1,23 +1,52 @@
-import 'package:flutter/material.dart';
-
-import '../home/bottom_navigation_page.dart';
+import 'package:flutter/material.dart'
+    show
+        AppBar,
+        BorderRadius,
+        BoxDecoration,
+        BuildContext,
+        Center,
+        Color,
+        Colors,
+        Column,
+        Container,
+        CrossAxisAlignment,
+        EdgeInsets,
+        FontWeight,
+        Icon,
+        Icons,
+        Key,
+        MainAxisAlignment,
+        MaterialApp,
+        Padding,
+        Row,
+        Scaffold,
+        SingleChildScrollView,
+        SizedBox,
+        StatelessWidget,
+        Text,
+        TextStyle,
+        Widget,
+        runApp;
+import '../home/bottom_navigation_page.dart' show BottonNavigationPage;
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       title: 'Weather App',
-      home: PageFive(),
+      home: Reservas(),
       debugShowCheckedModeBanner: false,
     ),
   );
 }
 
-class PageFive extends StatelessWidget {
+class Reservas extends StatelessWidget {
+  const Reservas({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(229, 229, 229, 229),
+        backgroundColor: const Color.fromARGB(229, 229, 229, 229),
         title: const Center(
           child: Text(
             'Minhas Reservas',
@@ -30,9 +59,8 @@ class PageFive extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: const BottonNavigationPage(
-        paginaAtual: "PageFive()",
-      ),
+      bottomNavigationBar:
+          const BottonNavigationPage(paginaAtual: "Reservas()"),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

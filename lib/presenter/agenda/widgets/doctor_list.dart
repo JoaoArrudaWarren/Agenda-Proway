@@ -42,7 +42,7 @@ class DoctorList extends StatelessWidget {
               )
             ],
           ),
-          AgendaBtn(),
+          const AgendaBtn(),
         ],
       ),
     );
@@ -56,20 +56,22 @@ class AgendaBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => const Schedule())),
-        // isSelected = true,
-      },
-      child: Container(
-        alignment: Alignment.center,
-        width: 103,
-        height: 42,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          color: const Color.fromARGB(255, 110, 132, 218),
-        ),
+    //bool isSelected = false;
+    return Container(
+      alignment: Alignment.center,
+      width: 103,
+      height: 42,
+      // decoration: BoxDecoration(
+      //   borderRadius: BorderRadius.circular(15),
+      //   color: const Color.fromARGB(255, 110, 132, 218),
+      // ),
+      child: ElevatedButton(
+        // style: const ButtonStyle(backgroundColor: ),
+        onPressed: () => {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => const Schedule())),
+          //isSelected = true,
+        },
         child: const Text(
           "Agendar",
           style: TextStyle(color: Colors.white),

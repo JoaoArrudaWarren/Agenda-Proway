@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-import '../home/bottom_navigation_page.dart';
+import '../utils/bottom_navigation_page.dart';
 import 'widgets/available_times.dart';
 import 'widgets/confirm _reservation_btn.dart';
 import 'widgets/doctor_row_reservation.dart';
@@ -12,7 +12,9 @@ class Schedule extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar:  const BottonNavigationPage(paginaAtual: 'Page04()',),
+      bottomNavigationBar: const BottonNavigationPage(
+        paginaAtual: 'Schedule()',
+      ),
       //appBar: AppBar(),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(229, 229, 229, 229),
@@ -84,7 +86,7 @@ class Schedule extends StatelessWidget {
                   ),
                 ),
                 const DoctorRowReservation(),
-                const DoctorRowReservation(), 
+                const DoctorRowReservation(),
                 const ConfirmReservationBtn(),
               ],
             ),

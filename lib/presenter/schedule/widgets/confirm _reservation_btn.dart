@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class ConfirmReservationBtn extends StatelessWidget {
@@ -20,9 +22,7 @@ class ConfirmReservationBtn extends StatelessWidget {
         child: const Text(
           "Confirmar Reserva",
           style: TextStyle(
-              color: Colors.white,
-              fontSize: 18,
-              fontWeight: FontWeight.w400),
+              color: Colors.white, fontSize: 18, fontWeight: FontWeight.w400),
         ),
       ),
     );
