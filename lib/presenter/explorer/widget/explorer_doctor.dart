@@ -30,7 +30,6 @@ class ExplorerDoctor extends StatelessWidget {
             onTap: () => {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => const Schedule())),
-              //isSelected = true,
             },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -89,9 +88,10 @@ class ExplorerDoctor extends StatelessWidget {
             child: Container(
               decoration: const BoxDecoration(
                 border: Border(
-                    bottom: BorderSide(
-                  color: Color.fromARGB(127, 54, 50, 50),
-                )),
+                  bottom: BorderSide(
+                    color: Color.fromARGB(127, 54, 50, 50),
+                  ),
+                ),
               ),
             ),
           ),
