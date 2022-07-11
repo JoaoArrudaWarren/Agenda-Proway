@@ -7,7 +7,7 @@ void main() {
   runApp(
     const MaterialApp(
       title: 'Agenda Warren',
-      home: Reservas(),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
     ),
   );
