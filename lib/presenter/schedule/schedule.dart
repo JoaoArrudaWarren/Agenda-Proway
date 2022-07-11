@@ -6,8 +6,22 @@ import 'widgets/available_times.dart';
 import 'widgets/confirm _reservation_btn.dart';
 import 'widgets/doctor_row_reservation.dart';
 
-class Schedule extends StatelessWidget {
+class Schedule extends StatefulWidget {
   const Schedule({Key? key}) : super(key: key);
+
+  @override
+  State<Schedule> createState() => _ScheduleState();
+}
+
+class _ScheduleState extends State<Schedule> {
+ // final Map<int> indexTimeList = (); 
+  bool clicked = false;
+    void changeIsOn() {
+    setState(() {
+      clicked = true;
+    });
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +29,6 @@ class Schedule extends StatelessWidget {
       bottomNavigationBar: const BottonNavigationPage(
         paginaAtual: 'Schedule()',
       ),
-      //appBar: AppBar(),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(229, 229, 229, 229),
         title: const Center(
@@ -72,10 +85,10 @@ class Schedule extends StatelessWidget {
                   spacing: 10,
                   runSpacing: 10,
                   children: const [
-                    AvailableTimes(),
-                    AvailableTimes(),
-                    AvailableTimes(),
-                    AvailableTimes(),
+                    AvailableTimes(time: '8:00h', indexTime: 1,),
+                    AvailableTimes(time: '9:15h', indexTime: 2,),
+                    AvailableTimes(time: '10:30h', indexTime: 3,),
+                    AvailableTimes(time: '13:30h', indexTime: 4,),
                   ],
                 ),
                 Padding(
