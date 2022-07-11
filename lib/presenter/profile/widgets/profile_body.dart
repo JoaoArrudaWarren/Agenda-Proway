@@ -1,97 +1,167 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
-class Profile extends StatelessWidget {
-  const Profile({
+import '../../reservas/reservas.dart';
+import '../../utils/custom_clip_path.dart';
+
+class ProfileBody extends StatelessWidget {
+  const ProfileBody({
     Key? key,
-    required this.title,
-    required this.image,
-    required this.price,
-    required this.hearts,
   }) : super(key: key);
-  final String title;
-  final String image;
-  final String price;
-  final String hearts;
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 185,
-      height: 298,
-      color: const Color.fromARGB(255, 42, 45, 58),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            width: 160,
-            height: 185,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25),
-              image:
-                  DecorationImage(fit: BoxFit.fill, image: AssetImage(image)),
-            ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          SizedBox(
-            height: 70,
-            width: 140,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
+    return Material(
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        color: Colors.white,
+        child: Column(
+          children: [
+            Stack(
               children: [
-                Text(
-                  title,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
+                ClipPath(
+                  clipper: CustomClipPath(),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    height: 234,
+                    child: const Image(
+                      fit: BoxFit.cover,
+                      height: 10,
+                      image: AssetImage('../../images/central-rs.jpg'),
+                    ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      child: Row(
-                        children: [
-                          Text(
-                            price,
-                            style: const TextStyle(
-                                color: Colors.white, fontSize: 14),
-                          ),
-                          const Text(
-                            'ETH',
-                            textAlign: TextAlign.start,
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 10.5),
-                          ),
-                        ],
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      GestureDetector(
+                        child: const Icon(
+                          Icons.arrow_back_ios_new,
+                          color: Colors.black,
+                          size: 24,
+                        ),
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                      GestureDetector(
+                        child: Icon(
+                          Icons.more_vert_rounded,
+                          color: Colors.black.withOpacity(0.8),
+                          size: 26,
+                        ),
+                        onTap: () {},
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 242,
+                  alignment: Alignment.center,
+                  child: ClipRect(
+                    child: CircleAvatar(
+                      backgroundColor: Colors.black.withOpacity(0.6),
+                      radius: 93,
+                      child: ClipRect(
+                        child: BackdropFilter(
+                          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                        ),
                       ),
                     ),
-                    SizedBox(
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Icon(
-                            Icons.favorite,
-                            color: Colors.purple,
-                            size: 14,
-                          ),
-                          const SizedBox(width: 5),
-                          Text(
-                            hearts,
-                            style: const TextStyle(
-                                color: Colors.white, fontSize: 12),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+                  ),
+                ),
+                Container(
+                  height: 242,
+                  alignment: Alignment.center,
+                  child: const CircleAvatar(
+                    backgroundImage: AssetImage('../../images/professor.jpg'),
+                    radius: 70,
+                  ),
                 ),
               ],
             ),
-          ),
-        ],
+            Expanded(
+              child: ListView(
+                children: [
+                  Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Text(
+                            'Ailton D. Teach',
+                            style: TextStyle(
+                              color: Colors.black,
+                              wordSpacing: 3,
+                              fontSize: 20,
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Text(
+                            '4.5',
+                            style: TextStyle(
+                                color: Colors.black,
+                                wordSpacing: 6,
+                                // letterSpacing: 1.5,
+                                fontSize: 16),
+                          ),
+                          SizedBox(width: 5),
+                          Icon(Icons.star, color: Colors.amber, size: 14),
+                          SizedBox(width: 8),
+                          Text(
+                            '|  92',
+                            style: TextStyle(
+                                color: Colors.black,
+                                wordSpacing: 6,
+                                // letterSpacing: 1.5,
+                                fontSize: 16),
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Icon(Icons.favorite, color: Colors.red, size: 14),
+                        ],
+                      ),
+                      const SizedBox(height: 20),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 95, 117, 177),
+                            borderRadius: BorderRadius.circular(15)),
+                        child: MaterialButton(
+                          onPressed: (() {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: ((context) {
+                                  return const Reservas();
+                                }),
+                              ),
+                            );
+                          }),
+                          child: const Text(
+                            "Minhas Reservas",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              fontSize: 30,
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

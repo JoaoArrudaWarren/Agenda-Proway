@@ -38,27 +38,6 @@ class BottonNavigationPage extends StatelessWidget {
           label: '',
           backgroundColor: Colors.grey.shade100,
         ),
-        // BottomNavigationBarItem(
-        //   icon: IconButton(
-        //     onPressed: () {
-        //       Navigator.of(context).push(
-        //         MaterialPageRoute(
-        //           builder: ((context) {
-        //             return const Reservas();
-        //           }),
-        //         ),
-        //       );
-        //     },
-        //     icon: const Icon(
-        //       Icons.calendar_today,
-        //       size: 40,
-        //     ),
-        //     color: paginaAtual == "Reservas()" ? Colors.black : Colors.grey,
-        //     hoverColor: Colors.grey.shade300,
-        //   ),
-        //   label: 'Reservs',
-        //   backgroundColor: Colors.white,
-        // ),
         BottomNavigationBarItem(
           icon: IconButton(
             onPressed: () {
